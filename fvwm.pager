@@ -1,0 +1,39 @@
+#####
+## FvwmPager Config
+######
+#
+##active window
+Colorset 6 fg #606c78, bg #3e2528
+##line separators
+Colorset 7 fg #606c78, bg #08090a
+##window colors
+Colorset 8 fg #606c78, bg #4b595a
+##balloon tooltip colors (fg = font, bg = background)
+Colorset 9 fg #606c78, bg #08090a
+##Selected desktop shading
+Colorset 10 fg #606c78, bg #283a3e
+#
+DestroyModuleConfig FvwmPager: *
+*FvwmPager: Geometry 109x108+1+653
+*FvwmPager: Colorset * 7
+*FvwmPager: HiLightColorset * 10
+*FvwmPager: WindowColorsets 8 6
+*FvwmPager: BalloonColorset * 9
+*FvwmPager: !MiniIcons
+*FvwmPager: Font none
+*FvwmPager: SmallFont 5x8
+*FvwmPager: Balloons All
+*FvwmPager: BalloonFont "-vc-neoxis-medium-r-normal--10-100-75-75-c-60-iso8859-1"
+*FvwmPager: BalloonYOffset +2
+*FvwmPager: BalloonBorderWidth 1
+*FvwmPager: UseSkipList
+*FvwmPager: MoveThreshold 3
+*FvwmPager: NoSeparators
+*FvwmPager: WindowLabelFormat ""
+*FvwmPager: WindowBorderWidth 0
+#
+Style FvwmPager !Title, Handles, Borders, NeverFocus, !Iconifiable
+Style FvwmPager Sticky
+Style FvwmPager WindowListSkip
+Style FvwmPager CirculateSkipIcon, CirculateSkip
+Style FvwmPager StaysOnBottom

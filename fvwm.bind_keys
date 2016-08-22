@@ -1,0 +1,42 @@
+#--------------------
+# Keyboard Bindings
+#--------------------
+
+## Workspaces
+Key 1 RWT 4 GotoPage 0 0
+Key 2 RWT 4 GotoPage 1 0
+Key 3 RWT 4 GotoPage 2 0
+Key 4 RWT 4 GotoPage 0 1
+Key 5 RWT 4 GotoPage 1 1
+Key 6 RWT 4 GotoPage 2 1
+Key 7 RWT 4 GotoPage 0 2
+Key 8 RWT 4 GotoPage 1 2
+Key 9 RWT 4 GotoPage 2 2
+
+## Multimedia Keys
+Key XF86AudioRaiseVolume  A 4 Exec exec ~/.fvwm/notify_volume + 3
+Key XF86AudioLowerVolume  A 4 Exec exec ~/.fvwm/notify_volume - 3
+Key XF86AudioMute         A 4 Exec exec ~/.fvwm/notify_volume ! 3
+
+## Dzen Applets
+Key F1      A 4 Exec exec ~/.fvwm/dzen_music.sh
+
+## Programs
+Key Return  A 4 Exec exec urxvtc
+Key B       A 4 Exec exec firefox
+
+## Close Window
+AddToFunc close_window
++ I ThisWindow ($0) Close
+Key Q      A S4 close_window
+
+## Maximize Window
+AddToFunc monocle
++ I ThisWindow ($0) Maximize
+Key Space      A 4 monocle
+
+## Manual Window Move 
+Key j A 4 Direction South (AcceptsFocus) Focus
+Key h A 4 Direction West (AcceptsFocus) Focus
+Key l A 4 Direction East (AcceptsFocus) Focus
+Key k A 4 Direction North (AcceptsFocus) Focus

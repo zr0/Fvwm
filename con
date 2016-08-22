@@ -1,0 +1,35 @@
+ # Fonts defined in xfontsel (xft not yet supported)
+FONT1="-misc-stlarch-medium-r-normal--10-100-75-75-c-80-iso10646-1"
+FONT2="-lokaltog-fixed-medium-r-normal--10-100-75-75-c-60-iso8859-1"
+#FONT2="-vc-bleed2-medium-*-semicondensed-*-11-100-75-75-*-50-iso8859-15"
+FONT2="-vc-neoxis-medium-r-normal--10-100-75-75-c-60-iso8859-1"
+
+COLOR_BACKGROUND="#08090a"
+COLOR_FOREGROUND="#606c78"
+COLOR_ICON="#45282a"
+COLOR_ACTIVE="#606c78"
+COLOR_OCCUPIED="#45282a"
+COLOR_URGENT="#FFd17b49"
+
+# Height of underlines / overlines
+LINEHEIGHT="3"
+
+# Panel geometry
+PANEL_HEIGHT=14
+PANEL_WIDTH=''
+PANEL_GEOMETRY="${PANEL_WIDTH}x${PANEL_HEIGHT}+0+0"
+
+# Notification geometry
+NOTIFY_HEIGHT=$PANEL_HEIGHT
+#NOTIFY_HEIGHT=12
+NOTIFY_WIDTH=155
+NOTIFY_GEOMETRY="${NOTIFY_WIDTH}x${NOTIFY_HEIGHT}+1203+0"
+
+# Duration of notifications
+DURATION=2
+
+# Volume change clip
+CLIP="/home/s3r0/Git/huayra-sound-theme/sonido-huayra/stereo/audio-volume-change.oga"
+# Length of volume bar
+BAR_LENGTH=20
+BAR_CHAR='*'

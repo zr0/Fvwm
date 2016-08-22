@@ -1,0 +1,12 @@
+#/bin/bash
+if [ $(pgrep astime | wc -w) -gt 0 ]; then
+	echo "Already started"
+	else
+		astime -geometry 108x108+1+0 -bg "#08090a" -fg "#606c78" -sec "#344633" -min "#283a3e" -hour "#3e2528" -day "#606c78" -ampm "#606c78" -date "#606c78" -at -fh -nh -noborders & 
+		fi
+
+#		if [ $(pgrep conky | wc -w) -gt 0 ]; then
+#			echo "Already started"
+#			else
+#				conky -c /home/s3r0/.fvwm/conkyrc &
+#				fi
